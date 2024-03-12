@@ -17,6 +17,13 @@ export default function Home() {
         >
           Pricing-Grids
         </Link>
+
+        <Link
+          href="/product-modal"
+          className="hover:underline hover:text-blue-500 text-left"
+        >
+          product-modal
+        </Link>
       </div>
     </main>
   );
