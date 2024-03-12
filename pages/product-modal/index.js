@@ -1,8 +1,18 @@
+import { IconChevronLeft } from "@tabler/icons-react";
+import Link from "next/link";
 import React from "react";
 
 const ProductModal = () => {
   return (
-    <div className="h-screen w-full flex justify-center items-center bg-slate-200 ">
+    <div className="min-h-screen w-full flex justify-center items-center bg-slate-200 ">
+      <Link
+        href={"../"}
+        className="absolute top-4 left-4 flex hover:bg-gray-400 p-2 rounded-xl"
+      >
+        <IconChevronLeft />
+        back
+      </Link>
+
       <div className="bg-white rounded-lg p-5 flex flex-col md:flex-row w-fit shadow-2xl gap-10 m-20">
         <img
           alt="headphone"
@@ -44,12 +54,12 @@ const ProductModal = () => {
           <div className="flex flex-col md:flex-row w-full gap-4">
             <button className="flex items-center justify-center font-medium gap-2 border-2 border-gray-300 py-2 px-4 rounded-lg w-full hover:-translate-y-0.5 hover:shadow-lg duration-150 hover:bg-opacity-30">
               <img alt="weight" src="images/weight.png" className="w-8 h-8" />
-              <span>Add to cart</span>
+              <span className="text-nowrap">Add to cart</span>
             </button>
 
             <button className="flex items-center justify-center font-medium gap-2 border-2 border-gray-300 py-2 px-4 rounded-lg w-full hover:-translate-y-0.5 hover:shadow-lg duration-150 hover:bg-opacity-30">
               <img alt="weight" src="images/heart.png" className="w-8 h-8" />
-              <span>Add to wishlist</span>
+              <span className="text-nowrap">Add to wishlist</span>
             </button>
           </div>
         </div>
