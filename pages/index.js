@@ -22,7 +22,14 @@ export default function Home() {
           href="/product-modal"
           className="hover:underline hover:text-blue-500 text-left"
         >
-          product-modal
+          Product-Modal
+        </Link>
+
+        <Link
+          href="/image-gallery"
+          className="hover:underline hover:text-blue-500 text-left"
+        >
+          Image Gallery
         </Link>
       </div>
     </main>
