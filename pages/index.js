@@ -31,6 +31,13 @@ export default function Home() {
         >
           Image Gallery
         </Link>
+
+        <Link
+          href="/login-modal"
+          className="hover:underline hover:text-blue-500 text-left"
+        >
+          Login Modal
+        </Link>
       </div>
     </main>
   );
